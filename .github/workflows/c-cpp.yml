@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: install
+      run: |
+        brew install xmake
+        brew info xmake
+    - name: ln -s GLUT
+      run: |
+        sudo ln -s $(xcrun --show-sdk-path)/System/Library/Frameworks/GLUT.framework/Headers \
+         $(xcrun --show-sdk-path)/usr/include/GL
+    - name: build
+      run: |
+        xmake build -y
+        xmake show
