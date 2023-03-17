@@ -12,7 +12,7 @@ jobs:
     - name: install
       run: |
         brew install xmake
-        brew info xmake
+        brew install gl2ps
     - name: ln -s GLUT
       run: |
         sudo ln -s $(xcrun --show-sdk-path)/System/Library/Frameworks/GLUT.framework/Headers \
