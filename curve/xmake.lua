@@ -1,4 +1,3 @@
--- add_frameworks("GLUT", "OpenGL")
 add_requires("brew::gl2ps")
 
 target("axis")
@@ -12,7 +11,7 @@ target("grid")
 target("gl2ps")
     set_kind("binary")
     add_files("gl2ps.c")
-    add_links("gl2ps")
+    add_packages("brew::gl2ps")
 
 target("curve")
     set_kind("binary")
