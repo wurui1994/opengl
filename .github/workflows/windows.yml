@@ -15,6 +15,6 @@ jobs:
         scoop install xmake
     - name: build
       env: 
-        VCPKG_ROOT: ${{ VCPKG_INSTALLATION_ROOT }}
+        VCPKG_ROOT: ${{ env.VCPKG_INSTALLATION_ROOT }}
       run: |
         xmake build -y
