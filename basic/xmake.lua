@@ -1,3 +1,5 @@
+set_group("basic")
+
 target("rect")
     add_files("rect.c")
 

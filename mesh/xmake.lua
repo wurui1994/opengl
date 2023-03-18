@@ -1,3 +1,5 @@
+set_group("mesh")
+
 target("sphere")
     add_files("sphere.c")
 

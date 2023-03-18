@@ -6,6 +6,8 @@ else
         "vcpkg::zlib")
 end
 
+set_group("curve")
+
 target("axis")
     add_files("axis.c")
 

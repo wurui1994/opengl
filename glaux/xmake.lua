@@ -1,3 +1,5 @@
+set_group("glaux")
+
 target("element")
     add_files("element.c")
 
