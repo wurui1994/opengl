@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     // puts(EXTENSIONS);
 
     GLint max_layers;
-    glGetIntegerv(GL_MAX_TEXTURE_IMAGE_UNITS, &max_layers);
+    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &max_layers);
     printf("max texture size=%d\n", max_layers);
     return 0;
 }
