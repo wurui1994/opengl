@@ -19,3 +19,9 @@ jobs:
     - name: build
       run: |
         xmake build -y
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: macos-artifact
+        path: build/macosx
+        retention-days: 2
