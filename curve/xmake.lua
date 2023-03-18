@@ -1,4 +1,4 @@
-if is_plat("macos") then
+if is_plat("macosx") then
     add_requires("brew::gl2ps")
 else 
     add_requires("vcpkg::gl2ps")
@@ -15,7 +15,7 @@ target("grid")
 target("gl2ps")
     set_kind("binary")
     add_files("gl2ps.c")
-    if is_plat("macos") then
+    if is_plat("macosx") then
         add_packages("brew::gl2ps")
     else 
         add_packages("vcpkg::gl2ps")
