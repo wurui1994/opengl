@@ -11,7 +11,7 @@ jobs:
     - name: install
       shell: pwsh
       run: |
-        irm get.scoop.sh | iex
+        iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
         scoop install xmake
     - name: build
       env: 
