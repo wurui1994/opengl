@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
 	glutInitWindowPosition(350, 120);
 	glutInitWindowSize(500, 500);
-	glutCreateWindow("First OpenGL Program");
+	glutCreateWindow("hello");
 	glutDisplayFunc(&myDisplay);
 	glutMainLoop();
 	return 0;

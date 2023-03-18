@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(250, 250);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("hello");
+	glutCreateWindow("house");
 	glutDisplayFunc(display);
 	glutMainLoop();
 	return 0;

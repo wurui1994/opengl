@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // 初始化窗口的显示模式
 	glutInitWindowSize(400, 400);				 // 设置窗口的尺寸
 	glutInitWindowPosition(100, 120);			 // 设置窗口的位置
-	glutCreateWindow("矩形");					 // 创建一个名为矩形的窗口
+	glutCreateWindow("rect");					 // 创建一个名为矩形的窗口
 	glutDisplayFunc(Display);					 // 设置当前窗口的显示回调函数
 	Initial();
 	glutMainLoop(); // 启动主GLUT事件处理循环

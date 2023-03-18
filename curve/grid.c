@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_DOUBLE);
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(300, 120);
-	glutCreateWindow("Point examples");
+	glutCreateWindow("grid");
 	glutDisplayFunc(display);
 	gluOrtho2D(-n, n, n, -n);
 	glutMainLoop();

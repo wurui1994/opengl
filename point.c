@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(200, 200);
 	glutInitWindowPosition(10, 10);
-	glutCreateWindow("Point examples");
+	glutCreateWindow("point");
 	glutDisplayFunc(RenderScene);
 	glClearColor(0.0f, 0.0f, 0.0f, 1);
 	glutMainLoop();

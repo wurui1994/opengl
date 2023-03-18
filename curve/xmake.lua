@@ -1,7 +1,9 @@
 if is_plat("macosx") then
     add_requires("brew::gl2ps")
 else 
-    add_requires("vcpkg::gl2ps")
+    add_requires("vcpkg::gl2ps", 
+        "vcpkg::libpng",
+        "vcpkg::zlib")
 end
 
 target("axis")
@@ -18,7 +20,9 @@ target("gl2ps")
     if is_plat("macosx") then
         add_packages("brew::gl2ps")
     else 
-        add_packages("vcpkg::gl2ps")
+        add_packages("vcpkg::gl2ps", 
+            "vcpkg::libpng",
+            "vcpkg::zlib")
     end
 
 target("curve")

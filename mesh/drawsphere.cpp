@@ -27,8 +27,9 @@ void drawSlice(point &p1, point &p2, point &p3, point &p4, SPHERE_MODE mode);
 point *getPointMatrix(GLfloat radius, GLint slices);
 int drawSphere(GLfloat radius, GLint slices, SPHERE_MODE mode);
 
-int main()
+int main(int argc, char **argv)
 {
+	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(100, 100);

@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_DOUBLE);
 	glutInitWindowSize(500, 500);
 	glutInitWindowPosition(350, 120);
-	glutCreateWindow("Draw Curve");
+	glutCreateWindow("text");
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);

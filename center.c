@@ -18,7 +18,7 @@ int main()
 	glutInitWindowPosition((cx - 400) / 2, (cy - 400) / 2);
 	// glutInitWindowPosition(768/2,  1368/2);
 	// glutInitWindowSize(600,  400);
-	glutCreateWindow("OpenGL");
+	glutCreateWindow("center");
 	glutDisplayFunc(&myDisplay);
 	glutMainLoop();
 	return 0;

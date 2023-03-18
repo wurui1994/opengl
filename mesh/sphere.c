@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(200, 200);
-	glutCreateWindow("旋转动画");
+	glutCreateWindow("sphere");
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
@@ -137,7 +137,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(200, 200);
-	glutCreateWindow("旋转动画");
+	glutCreateWindow("sphere");
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
@@ -230,7 +230,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(200, 200);
-	glutCreateWindow("旋转动画");
+	glutCreateWindow("sphere");
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);

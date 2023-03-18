@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(400, 400);
 	glutInitWindowPosition(400, 150);
-	glutCreateWindow("绘制奥运五环");
+	glutCreateWindow("five circle");
 	glutDisplayFunc(Display);
 	glutReshapeFunc(ChangeSize);
 	Initial();

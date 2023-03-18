@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(600, 350);
 	glutInitWindowPosition(200, 200);
-	glutCreateWindow("旋转动画");
+	glutCreateWindow("rotate");
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
