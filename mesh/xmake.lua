@@ -1,23 +1,10 @@
 set_group("mesh")
 
-target("sphere")
-    add_files("sphere.c")
-
-target("planeclip")
-    add_files("planeclip.c")
-
-target("paraboloid")
-    add_files("paraboloid.c")
-
-target("saddle")
-    add_files("saddle.c")
-
-target("drawsphere")
-    add_files("drawsphere.cpp")
-
-target("mesh")
-    add_files("mesh.c")
-
-target("surface")
-    add_files("surface.c")
+add_target("sphere.c")
+add_target("planeclip.c")
+add_target("paraboloid.c")
+add_target("saddle.c")
+add_target("drawsphere.cpp")
+add_target("mesh.c")
+add_target("surface.c")
     

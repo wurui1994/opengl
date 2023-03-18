@@ -2,6 +2,11 @@ add_rules("mode.debug", "mode.release")
 
 set_languages("c99", "c++11")
 
+function add_target(t)
+    target(path.basename(t))
+    add_files(t)
+end
+
 if is_plat("windows") then 
     add_ldflags("-subsystem:windows", "-entry:mainCRTStartup", {force=true}) 
 end

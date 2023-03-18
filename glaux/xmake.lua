@@ -1,13 +1,6 @@
 set_group("glaux")
 
-target("element")
-    add_files("element.c")
-
-target("cube")
-    add_files("cube.c")
-
-target("transform")
-    add_files("transform.c")
-
-target("example")
-    add_files("example.c")
+add_target("element.c")
+add_target("cube.c")
+add_target("transform.c")
+add_target("example.c")
