@@ -66,7 +66,6 @@ int main(int argc, char **argv)
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
-	glutIdleFunc(display); // 设置空闲时用的函数
 	glutMainLoop();
 	return 0;
 }
@@ -141,7 +140,6 @@ int main(int argc, char **argv)
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
-	glutIdleFunc(display); // 设置空闲时用的函数
 	glutMainLoop();
 	return 0;
 }
@@ -234,7 +232,6 @@ int main(int argc, char **argv)
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
-	glutIdleFunc(display); // 设置空闲时用的函数
 	glutMainLoop();
 	return 0;
 }

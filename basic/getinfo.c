@@ -7,11 +7,11 @@ int main(int argc, char *argv[])
     glutCreateWindow("info");
     const GLubyte *VENDOR, *RENDERER, *VERSION, *EXTENSIONS;
     VENDOR = glGetString(GL_VENDOR);
-    puts(VENDOR);
+    puts((char*)VENDOR);
     RENDERER = glGetString(GL_RENDERER);
-    puts(RENDERER);
+    puts((char*)RENDERER);
     VERSION = glGetString(GL_VERSION);
-    puts(VERSION);
+    puts((char*)VERSION);
     // EXTENSIONS = glGetString(GL_EXTENSIONS);
     // puts(EXTENSIONS);
 
