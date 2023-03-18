@@ -2,7 +2,13 @@ add_rules("mode.debug", "mode.release")
 
 set_languages("c99", "c++11")
 
-add_frameworks("GLUT", "OpenGL")
+if is_plat("macos") then
+    add_frameworks("GLUT", "OpenGL")
+    add_defines("GL_SILENCE_DEPRECATION")
+else
+    add_requires("freeglut")
+    add_packages("freeglut")
+end
 
 target("rect")
     set_kind("binary")

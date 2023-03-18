@@ -1,4 +1,8 @@
-add_requires("brew::gl2ps")
+if is_plat("macos") then
+    add_requires("brew::gl2ps")
+else 
+    add_requires("vcpkg::gl2ps")
+end
 
 target("axis")
     set_kind("binary")
@@ -11,7 +15,11 @@ target("grid")
 target("gl2ps")
     set_kind("binary")
     add_files("gl2ps.c")
-    add_packages("brew::gl2ps")
+    if is_plat("macos") then
+        add_packages("brew::gl2ps")
+    else 
+        add_packages("vcpkg::gl2ps")
+    end
 
 target("curve")
     set_kind("binary")
