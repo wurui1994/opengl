@@ -17,4 +17,4 @@ jobs:
       env: 
         VCPKG_ROOT: ${{ env.VCPKG_INSTALLATION_ROOT }}
       run: |
-        xmake build -y
+        ~\scoop\shims\xmake build -y
