@@ -3,7 +3,8 @@ if is_plat("macosx") then
 else 
     add_requires("vcpkg::gl2ps", 
         "vcpkg::libpng",
-        "vcpkg::zlib")
+        "vcpkg::zlib",
+        {configs = {shared = true}})
 end
 
 set_group("curve")
