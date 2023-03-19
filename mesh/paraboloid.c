@@ -52,7 +52,6 @@ void display(void)
 	glClipPlane(GL_CLIP_PLANE0, eqn);
 	glEnable(GL_CLIP_PLANE0);
 	//
-	rtri -= 0.05f;	   // 加一个角度
 	glutSwapBuffers(); // 交换双缓存
 }
 
@@ -66,6 +65,13 @@ void reshape(int width, int height)
 	glLoadIdentity();
 }
 
+void update(int value)
+{
+	rtri -= 10.0f;	   // 加一个角度
+	glutPostRedisplay();
+	glutTimerFunc(100,update,0);
+}
+
 int main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
@@ -77,6 +83,7 @@ int main(int argc, char **argv)
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
+	glutTimerFunc(100,update,0);
 	glutMainLoop();
 	return 0;
 }
