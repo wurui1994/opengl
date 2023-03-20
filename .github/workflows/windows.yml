@@ -11,8 +11,7 @@ jobs:
     - name: install
       shell: pwsh
       run: |
-        iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
-        scoop install xmake
+        irm 'https://xmake.io/psget.text' | iex
     - name: build
       run: |
         ~\scoop\shims\xmake build -y
