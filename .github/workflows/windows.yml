@@ -14,7 +14,7 @@ jobs:
         irm 'https://xmake.io/psget.text' | iex
     - name: build
       run: |
-        ~\scoop\shims\xmake build -y
+        xmake build -y
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
