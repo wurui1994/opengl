@@ -8,10 +8,9 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-    - name: install
-      shell: pwsh
-      run: |
-        irm 'https://xmake.io/psget.text' | iex
+    - uses: xmake-io/github-action-setup-xmake@v1
+      with:
+        xmake-version: latest
     - name: build
       run: |
         xmake build -y
