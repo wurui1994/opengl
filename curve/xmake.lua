@@ -1,11 +1,11 @@
-if is_plat("macosx") then
-    add_requires("brew::gl2ps")
-else 
-    add_requires("vcpkg::gl2ps", 
-        "vcpkg::libpng",
-        "vcpkg::zlib",
-        {configs = {shared = true}})
-end
+-- if is_plat("macosx") then
+--     add_requires("brew::gl2ps")
+-- else 
+--     add_requires("vcpkg::gl2ps", 
+--         "vcpkg::libpng",
+--         "vcpkg::zlib",
+--         {configs = {shared = true}})
+-- end
 
 set_group("curve")
 
@@ -15,11 +15,11 @@ add_target("curve.c")
 add_target("curve2.c")
 add_target("curve+grid.c")
 
-add_target("gl2ps.c")
-if is_plat("macosx") then
-    add_packages("brew::gl2ps")
-else 
-    add_packages("vcpkg::gl2ps", 
-        "vcpkg::libpng",
-        "vcpkg::zlib")
-end
+-- add_target("gl2ps.c")
+-- if is_plat("macosx") then
+--     add_packages("brew::gl2ps")
+-- else 
+--     add_packages("vcpkg::gl2ps", 
+--         "vcpkg::libpng",
+--         "vcpkg::zlib")
+-- end
